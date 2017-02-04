@@ -71,6 +71,8 @@ public class Clippy extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent e) {
     //lewis(questionField.getText());
     setAnswer(questionField.getText());
+    questionField.setText("");
+    
   }
 
 }
