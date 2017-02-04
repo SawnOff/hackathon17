@@ -4,9 +4,9 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class RunShellCommandFromJava {
-
+  
   public static void executeCommand(String command) {
-
+    
     try {
       Process proc = Runtime.getRuntime().exec(command);
       // Read the output
@@ -18,25 +18,51 @@ public class RunShellCommandFromJava {
       }
       proc.waitFor();
     } catch (IOException | InterruptedException e) {
-
+      //
     }
   }
-
+  
+  private static String sugarPath(String path) {
+    String result = path.substring(path.indexOf("/") + 1);
+    String withName = result.substring(result.indexOf("/") + 1);
+    return "~/" + withName.substring(withName.indexOf("/") + 1);
+  }
+  
   public static void main(String[] args) {
-//    executeCommand("cd ~");
     Scanner sc = new Scanner(System.in);
     String current;
+    String newLoc;
     try {
-      for (int i = 0; true; i++) {
-        System.out.print("> CLIPPY:~ ");
-        current = new java.io.File(".").getCanonicalPath();
-        System.out.print(current + "$ ");
-        executeCommand(sc.nextLine());
+  
+      System.out.print("clippy:@");
+      current = new java.io.File(".").getCanonicalPath();
+      current = sugarPath(current);
+      System.out.print(current + "$ ");
+      
+      while (true) {
+        String input = sc.nextLine();
+        try {
+          if (input.substring(0, input.indexOf(" ")).equals("cd")) {
+            newLoc = input.substring(input.indexOf(" ") + 1);
+            System.out.print("clippy:@");
+            System.out.print(newLoc + "$ ");
+  
+          } else {
+            executeCommand(input);
+            System.out.print("clippy:@");
+            current = new java.io.File(".").getCanonicalPath();
+            current = sugarPath(current);
+            System.out.print(current + "$ ");
+            
+          }
+        } catch (ArrayIndexOutOfBoundsException e) {
+          System.out.println("CUNT!");
+        }
       }
-    } catch (IOException e) {
-
+    } catch (Exception e) {
+      //
     }
     System.out.println();
   }
-
+  
 }
