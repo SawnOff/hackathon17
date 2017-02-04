@@ -34,7 +34,7 @@ public class Clippy extends JFrame implements ActionListener {
     upperBox.setAlignmentX(Box.CENTER_ALIGNMENT);
     totalBox.add(upperBox);
 
-    JLabel image = new JLabel(new ImageIcon("/home/cheukwing/Programming/misc/hackathon17/Clippy.png"));
+    JLabel image = new JLabel(new ImageIcon("Clippy.png"));
     image.setAlignmentX(JLabel.LEFT_ALIGNMENT);
     upperBox.add(image);
 
@@ -46,6 +46,7 @@ public class Clippy extends JFrame implements ActionListener {
 
     this.questionField = new JTextField(20);
     questionField.setAlignmentX(JTextArea.CENTER_ALIGNMENT);
+    questionField.addActionListener(this);
     totalBox.add(questionField);
 
     this.answer = new JLabel("<html> Hi! I am Clippy, <br>" +
@@ -58,13 +59,15 @@ public class Clippy extends JFrame implements ActionListener {
 
   }
 
-  public void setAnswer(String newAnswer) {
+  private void setAnswer(String newAnswer) {
     answer.setText(newAnswer);
   }
 
   @Override
   public void actionPerformed(ActionEvent e) {
     //lewis(questionField.getText());
+    setAnswer(questionField.getText());
+    SwingUtilities.updateComponentTreeUI(answer);
   }
 
 }
