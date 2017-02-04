@@ -6,34 +6,45 @@ import java.net.URL;
 
 public final class MicrosoftHttpRequest {
 
-  public static String sendText(String txt) throws Exception {
-    String urlStr = "http://h17.duckdns.org/request.php";
-    URL url = new URL(urlStr);
-    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+  public static String[] sendText(String txt) {
+    HttpURLConnection con = null;
 
-    con.setRequestMethod("POST");
+    try {
+      String urlStr = "http://h17.duckdns.org/request.php";
+      URL url = new URL(urlStr);
+      con = (HttpURLConnection) url.openConnection();
 
-    String urlParameters = "text=" + txt;
+      con.setRequestMethod("POST");
 
-    con.setDoOutput(true);
-    DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-    wr.writeBytes(urlParameters);
-    wr.flush();
-    wr.close();
+      String urlParameters = "text=" + txt;
 
-    int responseCode = con.getResponseCode();
-    System.out.println("Response Code: " + responseCode);
+      con.setDoOutput(true);
+      DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+      wr.writeBytes(urlParameters);
+      wr.flush();
+      wr.close();
 
-    BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-    String inputLine;
-    StringBuffer response = new StringBuffer();
+      BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+      String inputLine;
+      StringBuffer response = new StringBuffer();
 
-    while ((inputLine = in.readLine()) != null) {
-      response.append(inputLine);
+      while ((inputLine = in.readLine()) != null) {
+        response.append(inputLine);
+      }
+      in.close();
+
+      String str = response.toString().split(",")[0];
+      String trimmed = str.substring(11, str.length() - 1);
+
+      return trimmed.split(":");
+    } catch (Exception e) {
+      e.printStackTrace();
+      return null;
+    } finally {
+      if (con != null) {
+        con.disconnect();
+      }
     }
-    in.close();
-
-    return response.toString();
   }
 
 }
