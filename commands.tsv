@@ -1,142 +1,258 @@
-Add a new user	Add a new user:adduser	
-Print machine architecture	Print machine architecture:arch	
-Find and Replace text within file(s)	Find and Replace text within file(s):awk	
-An arbitrary precision calculator language	An arbitrary precision calculator language:bc	
-Display a calendar	Display a calendar:cal	
-Concatenate files and print on the standard output	Concatenate files and print on the standard output:cat	
-Change working directory	Change working directory:chdir	
-Change the group ownership of files	Change the group ownership of files:chgrp	
-Tool for maintaining the /etc/rc[0-6].d directory hierarchy	Tool for maintaining the /etc/rc[0-6].d directory hierarchy:chkconfig	
-Change the access permissions of files and directories	Change the access permissions of files and directories:chmod	
-Change the user and group ownership of files	Change the user and group ownership of files:chown	
-Change root directory	Change root directory:chroot	
-Print CRC checksum and byte counts	Print CRC checksum and byte counts:cksum	
-Clear terminal screen	Clear terminal screen:clear	
-Compare two files	Compare two files:cmp	
-Compare two sorted files line by line	Compare two sorted files line by line:comm	
-Copy one or more files to another location	Copy one or more files to another location:cp	
-Daemon to execute scheduled commands	Daemon to execute scheduled commands:cron	
-Schedule a command to run at a later time	Schedule a command to run at a later time:crontab	
-Split a file into context-determined pieces	Split a file into context-determined pieces:csplit	
-Divide a file into several parts	Divide a file into several parts:cut	
-Display or change the date & time	Display or change the date & time:date	
-Desk Calculator	Desk Calculator:dc	
-Data Dump - Convert and copy a file	Data Dump - Convert and copy a file:dd	
-Display free disk space	Display free disk space:df	
-Display the differences between two files	Display the differences between two files:diff	
-Show differences among three files	Show differences among three files:diff3	
-Briefly list directory contents	Briefly list directory contents:dir	
-Colour setup for `ls'	Colour setup for `ls':dircolors	
-Convert a full pathname to just a path	Convert a full pathname to just a path:dirname	
-Estimate file space usage	Estimate file space usage:du	
-Display message on screen	Display message on screen:echo	
-A line-oriented text editor (edlin)	A line-oriented text editor (edlin):ed	
-Search file(s) for lines that match an extended expression	Search file(s) for lines that match an extended expression:egrep	
-Eject CD-ROM	Eject CD-ROM:eject	
-Display, set, or remove environment variables	Display, set, or remove environment variables:env	
-Convert tabs to spaces	Convert tabs to spaces:expand	
-Evaluate expressions	Evaluate expressions:expr	
-Print prime factors	Print prime factors:factor	
-Do nothing, unsuccessfully	Do nothing, unsuccessfully:false	
-Low-level format a floppy disk	Low-level format a floppy disk:fdformat	
-Partition table manipulator for Linux	Partition table manipulator for Linux:fdisk	
-Search file(s) for lines that match a fixed string	Search file(s) for lines that match a fixed string:fgrep	
-Search for files that meet a desired criteria	Search for files that meet a desired criteria:find	
-Reformat paragraph text	Reformat paragraph text:fmt	
-Wrap text to fit a specified width	Wrap text to fit a specified width:fold	
-Format disks or tapes	Format disks or tapes:format	
-Display memory usage	Display memory usage:free	
-Filesystem consistency check and repair	Filesystem consistency check and repair:fsck	
-Find and Replace text within file(s)	Find and Replace text within file(s):gawk	
-Search file(s) for lines that match a given pattern	Search file(s) for lines that match a given pattern:grep	
-Print group names a user is in	Print group names a user is in:groups	
-Compress or decompress named file(s)	Compress or decompress named file(s):gzip	
-Output the first part of file(s)	Output the first part of file(s):head	
-Print or set system name	Print or set system name:hostname	
-Print user and group id's	Print user and group id's:id	
-Help info	Help info:info	
-Copy files and set attributes	Copy files and set attributes:install	
-Join lines on a common field	Join lines on a common field:join	
-Stop a process from running	Stop a process from running:kill	
-Display output one screen at a time	Display output one screen at a time:less	
-Make links between files	Make links between files:ln	
-Find files	Find files:locate	
-Print current login name	Print current login name:logname	
-Line printer control program	Line printer control program:lpc	
-Off line print	Off line print:lpr	
-Remove jobs from the print queue	Remove jobs from the print queue:lprm	
-List information about file(s)	List information about file(s):ls	
-Help manual	Help manual:man	
-Create new folder(s)	Create new folder(s):mkdir	
-Make FIFOs (named pipes)	Make FIFOs (named pipes):mkfifo	
-Make block or character special files	Make block or character special files:mknod	
-Display output one screen at a time	Display output one screen at a time:more	
-Mount a file system	Mount a file system:mount	
-Move or rename files or directories	Move or rename files or directories:mv	
-Set the priority of a command or job	Set the priority of a command or job:nice	
-Number lines and write files	Number lines and write files:nl	
-Run a command immune to hangups	Run a command immune to hangups:nohup	
-Modify a user password	Modify a user password:passwd	
-Merge lines of files	Merge lines of files:paste	
-Check file name portability	Check file name portability:pathchk	
-Convert text files for printing	Convert text files for printing:pr	
-Printer capability database	Printer capability database:printcap	
-Print environment variables	Print environment variables:printenv	
-Format and print data	Format and print data:printf	
-Process status	Process status:ps	
-Print Working Director	Print Working Director:pwdy	
-Display disk usage and limits	Display disk usage and limits:quota	
-Scan a file system for disk usage	Scan a file system for disk usage:quotacheck	
-Set disk quotas	Set disk quotas:quotactl	
-ram disk device	ram disk device:ram	
-Copy files between two machines	Copy files between two machines:rcp	
-Remove files	Remove files:rm	
-Remove folder(s)	Remove folder(s):rmdir	
-Remote Package Manager	Remote Package Manager:rpm	
-Remote file copy (Synchronize file trees)	Remote file copy (Synchronize file trees):rsync	
-Terminal window manager	Terminal window manager:screen	
-Merge two files interactively	Merge two files interactively:sdiff	
-Stream Editor	Stream Editor:sed	
-Accept keyboard input	Accept keyboard input:select	
-Print numeric sequences	Print numeric sequences:seq	
-Shutdown or restart linux	Shutdown or restart linux:shutdown	
-Delay for a specified time	Delay for a specified time:sleep	
-Sort text files	Sort text files:sort	
-Split a file into fixed-size pieces	Split a file into fixed-size pieces:split	
-Substitute user identity	Substitute user identity:su	
-Print a checksum for a file	Print a checksum for a file:sum	
-Make a new name for a file	Make a new name for a file:symlink	
-Synchronize data on disk with memory	Synchronize data on disk with memory:sync	
-Concatenate and write files in reverse	Concatenate and write files in reverse:tac	
-Output the last part of files	Output the last part of files:tail	
-Tape Archiver	Tape Archiver:tar	
-Redirect output to multiple files	Redirect output to multiple files:tee	
-Evaluate a conditional expression	Evaluate a conditional expression:test	
-Measure Program Resource Use	Measure Program Resource Use:time	
-Change file timestamps	Change file timestamps:touch	
-List processes running on the system	List processes running on the system:top	
-Trace Route to Host	Trace Route to Host:traceroute	
-Translate, squeeze, and/or delete characters	Translate, squeeze, and/or delete characters:tr	
-Do nothing, successfully	Do nothing, successfully:true	
-Topological sort	Topological sort:tsort	
-Print filename of terminal on stdin	Print filename of terminal on stdin:tty	
-Unmount a device	Unmount a device:umount	
-Print system information	Print system information:uname	
-Convert spaces to tabs	Convert spaces to tabs:unexpand	
-Uniquify files	Uniquify files:uniq	
-Convert units from one scale to another	Convert units from one scale to another:units	
-Unpack shell archive scripts	Unpack shell archive scripts:unshar	
-Create new user account	Create new user account:useradd	
-Modify user account	Modify user account:usermod	
-List users currently logged in	List users currently logged in:users	
-Encode a binary file	Encode a binary file:uuencode	
-Decode a file created by uuencode	Decode a file created by uuencode:uudecode	
-Verbosely list directory contents (`ls -l -b')	Verbosely list directory contents (`ls -l -b'):vdir	
-Execute/display a program periodically	Execute/display a program periodically:watch	
-Print byte, word, and line counts	Print byte, word, and line counts:wc	
-Report all known instances of a command	Report all known instances of a command:whereis	
-Locate a program file in the user's path	Locate a program file in the user's path:which	
-Print all usernames currently logged in	Print all usernames currently logged in:who	
-Print the current user id and name (`id -un')	Print the current user id and name (`id -un'):whoami	
-Execute utility, passing constructed argument list(s)	Execute utility, passing constructed argument list(s):xargs	
-Print a string until interrupted	Print a string until interrupted:yes	
+Create an alias	alias:Create an alias
+Search Help manual pages (man -k)	apropos:Search Help manual pages (man -k)
+Search for and install software packages (Debian/Ubuntu)	apt-get:Search for and install software packages (Debian/Ubuntu)
+Search for and install software packages (Debian/Ubuntu)	aptitude:Search for and install software packages (Debian/Ubuntu)
+Spell Checker	aspell:Spell Checker
+Find and Replace text, database sort/validate/index	awk:Find and Replace text, database sort/validate/index
+Strip directory and suffix from filenames	basename:Strip directory and suffix from filenames
+GNU Bourne-Again SHell	bash:GNU Bourne-Again SHell
+Arbitrary precision calculator language	bc:Arbitrary precision calculator language
+Send to background	bg:Send to background
+Set or display readline key and function bindings	bind:Set or display readline key and function bindings
+Run a shell builtin	builtin:Run a shell builtin
+Compress or decompress named file(s)	bzip2:Compress or decompress named file(s)
+Display a calendar	cal:Display a calendar
+Conditionally perform a command	case:Conditionally perform a command
+Concatenate and print (display) the content of files	cat:Concatenate and print (display) the content of files
+Change Directory	cd:Change Directory
+Partition table manipulator for Linux	cfdisk:Partition table manipulator for Linux
+Change group ownership	chgrp:Change group ownership
+Change access permissions	chmod:Change access permissions
+Change file owner and group	chown:Change file owner and group
+Run a command with a different root directory	chroot:Run a command with a different root directory
+System services (runlevel)	chkconfig:System services (runlevel)
+Print CRC checksum and byte counts	cksum:Print CRC checksum and byte counts
+Clear terminal screen	clear:Clear terminal screen
+Compare two files	cmp:Compare two files
+Compare two sorted files line by line	comm:Compare two sorted files line by line
+Run a command - ignoring shell functions	command:Run a command - ignoring shell functions
+Copy one or more files to another location	cp:Copy one or more files to another location
+Daemon to execute scheduled commands	cron:Daemon to execute scheduled commands
+Schedule a command to run at a later time	crontab:Schedule a command to run at a later time
+Split a file into context-determined pieces	csplit:Split a file into context-determined pieces
+Transfer data  from or to a server	curl:Transfer data  from or to a server
+Divide a file into several parts	cut:Divide a file into several parts
+Display or change the date and time	date:Display or change the date and time
+Desk Calculator	dc:Desk Calculator
+Convert and copy a file, write disk headers, boot records	dd:Convert and copy a file, write disk headers, boot records
+Data recovery tool	ddrescue:Data recovery tool
+Declare variables and give them attributes	declare:Declare variables and give them attributes
+Display free disk space	df:Display free disk space
+Display the differences between two files	diff:Display the differences between two files
+Show differences among three files	diff3:Show differences among three files
+DNS lookup	dig:DNS lookup
+Briefly list directory contents	dir:Briefly list directory contents
+Colour setup for `ls'	dircolors:Colour setup for `ls'
+Convert a full pathname to just a path	dirname:Convert a full pathname to just a path
+Display list of remembered directories	dirs:Display list of remembered directories
+Print kernel and driver messages	dmesg:Print kernel and driver messages
+Estimate file space usage	du:Estimate file space usage
+Display message on screen	echo:Display message on screen
+Search file(s) for lines that match an extended expression	egrep:Search file(s) for lines that match an extended expression
+Eject removable media	eject:Eject removable media
+Enable and disable builtin shell commands	enable:Enable and disable builtin shell commands
+Environment variables	env:Environment variables
+Ethernet card settings	ethtool:Ethernet card settings
+Evaluate several commands/arguments	eval:Evaluate several commands/arguments
+Execute a command	exec:Execute a command
+Exit the shell	exit:Exit the shell
+Automate arbitrary applications accessed over a terminal	expect:Automate arbitrary applications accessed over a terminal
+Convert tabs to spaces	expand:Convert tabs to spaces
+Set an environment variable	export:Set an environment variable
+Evaluate expressions	expr:Evaluate expressions
+Do nothing, unsuccessfully	false:Do nothing, unsuccessfully
+Low-level format a floppy disk	fdformat:Low-level format a floppy disk
+Partition table manipulator for Linux	fdisk:Partition table manipulator for Linux
+Send job to foreground	fg:Send job to foreground
+Search file(s) for lines that match a fixed string	fgrep:Search file(s) for lines that match a fixed string
+Determine file type	file:Determine file type
+Search for files that meet a desired criteria	find:Search for files that meet a desired criteria
+Reformat paragraph text	fmt:Reformat paragraph text
+Wrap text to fit a specified width.	fold:Wrap text to fit a specified width.
+Format disks or tapes	format:Format disks or tapes
+Display memory usage	free:Display memory usage
+File system consistency check and repair	fsck:File system consistency check and repair
+File Transfer Protocol	ftp:File Transfer Protocol
+Define Function Macros	function:Define Function Macros
+Identify/kill the process that is accessing a file	fuser:Identify/kill the process that is accessing a file
+Find and Replace text within file(s)	gawk:Find and Replace text within file(s)
+Parse positional parameters	getopts:Parse positional parameters
+Search file(s) for lines that match a given pattern	grep:Search file(s) for lines that match a given pattern
+Add a user security group	groupadd:Add a user security group
+Delete a group	groupdel:Delete a group
+Modify a group	groupmod:Modify a group
+Print group names a user is in	groups:Print group names a user is in
+Compress or decompress named file(s)	gzip:Compress or decompress named file(s)
+Remember the full pathname of a name argument	hash:Remember the full pathname of a name argument
+Output the first part of file(s)	head:Output the first part of file(s)
+Display help for a built-in command	help:Display help for a built-in command
+Command History	history:Command History
+Print or set system name	hostname:Print or set system name
+Interactive process viewer	htop:Interactive process viewer
+Convert the character set of a file	iconv:Convert the character set of a file
+Print user and group id's	id:Print user and group id's
+Conditionally perform a command	if:Conditionally perform a command
+Configure a network interface	ifconfig:Configure a network interface
+Stop a network interface	ifdown:Stop a network interface
+Start a network interface up	ifup:Start a network interface up
+Capture an X server screen and save the image to file	import:Capture an X server screen and save the image to file
+Copy files and set attributes	install:Copy files and set attributes
+Routing, devices and tunnels	ip:Routing, devices and tunnels
+List active jobs	jobs:List active jobs
+Join lines on a common field	join:Join lines on a common field
+Kill a process by specifying its PID	kill:Kill a process by specifying its PID
+Kill processes by name	killall:Kill processes by name
+Display output one screen at a time	less:Display output one screen at a time
+Perform arithmetic on shell variables	let:Perform arithmetic on shell variables
+Create a link to a file	link:Create a link to a file
+Create a symbolic link to a file	ln:Create a symbolic link to a file
+Create a function variable	local:Create a function variable
+Find files	locate:Find files
+Print current login name	logname:Print current login name
+Exit a login shell	logout:Exit a login shell
+Display lines beginning with a given string	look:Display lines beginning with a given string
+Line printer control program	lpc:Line printer control program
+Off line print	lpr:Off line print
+Print a file	lprint:Print a file
+Abort a print job	lprintd:Abort a print job
+List the print queue	lprintq:List the print queue
+Remove jobs from the print queue	lprm:Remove jobs from the print queue
+List block devices	lsblk:List block devices
+List information about file(s)	ls:List information about file(s)
+List open files	lsof:List open files
+Recompile a group of programs	make:Recompile a group of programs
+Help manual	man:Help manual
+Create new folder(s)	mkdir:Create new folder(s)
+Make FIFOs (named pipes)	mkfifo:Make FIFOs (named pipes)
+Create an hybrid ISO9660/JOLIET/HFS filesystem	mkisofs:Create an hybrid ISO9660/JOLIET/HFS filesystem
+Make block or character special files	mknod:Make block or character special files
+Display output one screen at a time	more:Display output one screen at a time
+Browse or page through a text file	most:Browse or page through a text file
+Mount a file system	mount:Mount a file system
+Manipulate MS-DOS files	mtools:Manipulate MS-DOS files
+Network diagnostics (traceroute/ping)	mtr:Network diagnostics (traceroute/ping)
+Move or rename files or directories	mv:Move or rename files or directories
+Mass Move and rename (files)	mmv:Mass Move and rename (files)
+Netcat, read and write data across networks	nc:Netcat, read and write data across networks
+Networking information	netstat:Networking information
+Set the priority of a command or job	nice:Set the priority of a command or job
+Number lines and write files	nl:Number lines and write files
+Run a command immune to hangups	nohup:Run a command immune to hangups
+Send desktop notifications	notify-send:Send desktop notifications
+Query Internet name servers interactively	nslookup:Query Internet name servers interactively
+Open a file in its default application	open:Open a file in its default application
+Operator access	op:Operator access
+Modify a user password	passwd:Modify a user password
+Merge lines of files	paste:Merge lines of files
+Check file name portability	pathchk:Check file name portability
+Test a network connection	ping:Test a network connection
+List processes by name	pgrep:List processes by name
+Kill processes by name	pkill:Kill processes by name
+Restore the previous value of the current directory	popd:Restore the previous value of the current directory
+Prepare files for printing	pr:Prepare files for printing
+Printer capability database	printcap:Printer capability database
+Print environment variables	printenv:Print environment variables
+Format and print data	printf:Format and print data
+Process status	ps:Process status
+Save and then change the current directory	pushd:Save and then change the current directory
+Monitor the progress of data through a pipe	pv:Monitor the progress of data through a pipe
+Print Working Directory	pwd:Print Working Directory
+Display disk usage and limits	quota:Display disk usage and limits
+Scan a file system for disk usage	quotacheck:Scan a file system for disk usage
+ram disk device	ram:ram disk device
+Archive files with compression	rar:Archive files with compression
+Copy files between two machines	rcp:Copy files between two machines
+Read a line from standard input	read:Read a line from standard input
+Read from stdin into an array variable	readarray:Read from stdin into an array variable
+Mark variables/functions as readonly	readonly:Mark variables/functions as readonly
+Reboot the system	reboot:Reboot the system
+Rename files	rename:Rename files
+Alter priority of running processes	renice:Alter priority of running processes
+Synchronize remote files via email	remsync:Synchronize remote files via email
+Exit a shell function	return:Exit a shell function
+Reverse lines of a file	rev:Reverse lines of a file
+Remove files	rm:Remove files
+Remove folder(s)	rmdir:Remove folder(s)
+Remote file copy (Synchronize file trees)	rsync:Remote file copy (Synchronize file trees)
+Multiplex terminal, run remote shells via ssh	screen:Multiplex terminal, run remote shells via ssh
+Secure copy (remote file copy)	scp:Secure copy (remote file copy)
+Merge two files interactively	sdiff:Merge two files interactively
+Stream Editor	sed:Stream Editor
+Accept keyboard input	select:Accept keyboard input
+Print numeric sequences	seq:Print numeric sequences
+Manipulate shell variables and functions	set:Manipulate shell variables and functions
+Secure File Transfer Program	sftp:Secure File Transfer Program
+Shift positional parameters	shift:Shift positional parameters
+Shell Options	shopt:Shell Options
+Shutdown or restart linux	shutdown:Shutdown or restart linux
+Delay for a specified time	sleep:Delay for a specified time
+Find files	slocate:Find files
+Sort text files	sort:Sort text files
+Run commands from a file '.'	source:Run commands from a file '.'
+Split a file into fixed-size pieces	split:Split a file into fixed-size pieces
+Socket Statistics	ss:Socket Statistics
+Secure Shell client (remote login program)	ssh:Secure Shell client (remote login program)
+Display file or file system status	stat:Display file or file system status
+Trace system calls and signals	strace:Trace system calls and signals
+Substitute user identity	su:Substitute user identity
+Execute a command as another user	sudo:Execute a command as another user
+Print a checksum for a file	sum:Print a checksum for a file
+Suspend execution of this shell	suspend:Suspend execution of this shell
+Synchronize data on disk with memory	sync:Synchronize data on disk with memory
+Output the last part of file	tail:Output the last part of file
+Store, list or extract files in an archive	tar:Store, list or extract files in an archive
+Redirect output to multiple files	tee:Redirect output to multiple files
+Evaluate a conditional expression	test:Evaluate a conditional expression
+Measure Program running time	time:Measure Program running time
+Run a command with a time limit	timeout:Run a command with a time limit
+User and system times	times:User and system times
+Change file timestamps	touch:Change file timestamps
+List processes running on the system	top:List processes running on the system
+Set terminal-dependent capabilities, color, position	tput:Set terminal-dependent capabilities, color, position
+Trace Route to Host	traceroute:Trace Route to Host
+Run a command when a signal is set(bourne)	trap:Run a command when a signal is set(bourne)
+Translate, squeeze, and/or delete characters	tr:Translate, squeeze, and/or delete characters
+Do nothing, successfully	true:Do nothing, successfully
+Topological sort	tsort:Topological sort
+Print filename of terminal on stdin	tty:Print filename of terminal on stdin
+Describe a command	type:Describe a command
+Limit user resources	ulimit:Limit user resources
+Users file creation mask	umask:Users file creation mask
+Unmount a device	umount:Unmount a device
+Remove an alias	unalias:Remove an alias
+Print system information	uname:Print system information
+Convert spaces to tabs	unexpand:Convert spaces to tabs
+Uniquify files	uniq:Uniquify files
+Convert units from one scale to another	units:Convert units from one scale to another
+Extract files from a rar archive	unrar:Extract files from a rar archive
+Remove variable or function names	unset:Remove variable or function names
+Unpack shell archive scripts	unshar:Unpack shell archive scripts
+Execute commands (until error)	until:Execute commands (until error)
+Show uptime	uptime:Show uptime
+Create new user account	useradd:Create new user account
+Delete a user account	userdel:Delete a user account
+Modify user account	usermod:Modify user account
+List users currently logged in	users:List users currently logged in
+Encode a binary file	uuencode:Encode a binary file
+Decode a file created by uuencode	uudecode:Decode a file created by uuencode
+Verbosely list directory contents (`ls -l -b')	v:Verbosely list directory contents (`ls -l -b')
+Verbosely list directory contents (`ls -l -b')	vdir:Verbosely list directory contents (`ls -l -b')
+Text Editor	vi:Text Editor
+Report virtual memory statistics	vmstat:Report virtual memory statistics
+Wait for a process to complete	wait:Wait for a process to complete
+Execute/display a program periodically	watch:Execute/display a program periodically
+Print byte, word, and line counts	wc:Print byte, word, and line counts
+Search the user's $path, man pages and source files for a program	whereis:Search the user's $path, man pages and source files for a program
+Search the user's $path for a program file	which:Search the user's $path for a program file
+Print all usernames currently logged in	who:Print all usernames currently logged in
+Print the current user id and name (`id -un')	whoami:Print the current user id and name (`id -un')
+Retrieve web pages or files via HTTP, HTTPS or FTP	wget:Retrieve web pages or files via HTTP, HTTPS or FTP
+Send a message to another user	write:Send a message to another user
+Execute utility, passing constructed argument list(s)	xargs:Execute utility, passing constructed argument list(s)
+Open a file or URL in the user's preferred application.	xdg-open:Open a file or URL in the user's preferred application.
+Compress or decompress .xz and .lzma files	xz:Compress or decompress .xz and .lzma files
+Print a string until interrupted	yes:Print a string until interrupted
+Package and compress (archive) files.	zip:Package and compress (archive) files.
+Run a command script in the current shell	.:Run a command script in the current shell
+Run the last command again	!!:Run the last command again
+:
