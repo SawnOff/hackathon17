@@ -1,0 +1,142 @@
+Add a new user	Add a new user:adduser	
+Print machine architecture	Print machine architecture:arch	
+Find and Replace text within file(s)	Find and Replace text within file(s):awk	
+An arbitrary precision calculator language	An arbitrary precision calculator language:bc	
+Display a calendar	Display a calendar:cal	
+Concatenate files and print on the standard output	Concatenate files and print on the standard output:cat	
+Change working directory	Change working directory:chdir	
+Change the group ownership of files	Change the group ownership of files:chgrp	
+Tool for maintaining the /etc/rc[0-6].d directory hierarchy	Tool for maintaining the /etc/rc[0-6].d directory hierarchy:chkconfig	
+Change the access permissions of files and directories	Change the access permissions of files and directories:chmod	
+Change the user and group ownership of files	Change the user and group ownership of files:chown	
+Change root directory	Change root directory:chroot	
+Print CRC checksum and byte counts	Print CRC checksum and byte counts:cksum	
+Clear terminal screen	Clear terminal screen:clear	
+Compare two files	Compare two files:cmp	
+Compare two sorted files line by line	Compare two sorted files line by line:comm	
+Copy one or more files to another location	Copy one or more files to another location:cp	
+Daemon to execute scheduled commands	Daemon to execute scheduled commands:cron	
+Schedule a command to run at a later time	Schedule a command to run at a later time:crontab	
+Split a file into context-determined pieces	Split a file into context-determined pieces:csplit	
+Divide a file into several parts	Divide a file into several parts:cut	
+Display or change the date & time	Display or change the date & time:date	
+Desk Calculator	Desk Calculator:dc	
+Data Dump - Convert and copy a file	Data Dump - Convert and copy a file:dd	
+Display free disk space	Display free disk space:df	
+Display the differences between two files	Display the differences between two files:diff	
+Show differences among three files	Show differences among three files:diff3	
+Briefly list directory contents	Briefly list directory contents:dir	
+Colour setup for `ls'	Colour setup for `ls':dircolors	
+Convert a full pathname to just a path	Convert a full pathname to just a path:dirname	
+Estimate file space usage	Estimate file space usage:du	
+Display message on screen	Display message on screen:echo	
+A line-oriented text editor (edlin)	A line-oriented text editor (edlin):ed	
+Search file(s) for lines that match an extended expression	Search file(s) for lines that match an extended expression:egrep	
+Eject CD-ROM	Eject CD-ROM:eject	
+Display, set, or remove environment variables	Display, set, or remove environment variables:env	
+Convert tabs to spaces	Convert tabs to spaces:expand	
+Evaluate expressions	Evaluate expressions:expr	
+Print prime factors	Print prime factors:factor	
+Do nothing, unsuccessfully	Do nothing, unsuccessfully:false	
+Low-level format a floppy disk	Low-level format a floppy disk:fdformat	
+Partition table manipulator for Linux	Partition table manipulator for Linux:fdisk	
+Search file(s) for lines that match a fixed string	Search file(s) for lines that match a fixed string:fgrep	
+Search for files that meet a desired criteria	Search for files that meet a desired criteria:find	
+Reformat paragraph text	Reformat paragraph text:fmt	
+Wrap text to fit a specified width	Wrap text to fit a specified width:fold	
+Format disks or tapes	Format disks or tapes:format	
+Display memory usage	Display memory usage:free	
+Filesystem consistency check and repair	Filesystem consistency check and repair:fsck	
+Find and Replace text within file(s)	Find and Replace text within file(s):gawk	
+Search file(s) for lines that match a given pattern	Search file(s) for lines that match a given pattern:grep	
+Print group names a user is in	Print group names a user is in:groups	
+Compress or decompress named file(s)	Compress or decompress named file(s):gzip	
+Output the first part of file(s)	Output the first part of file(s):head	
+Print or set system name	Print or set system name:hostname	
+Print user and group id's	Print user and group id's:id	
+Help info	Help info:info	
+Copy files and set attributes	Copy files and set attributes:install	
+Join lines on a common field	Join lines on a common field:join	
+Stop a process from running	Stop a process from running:kill	
+Display output one screen at a time	Display output one screen at a time:less	
+Make links between files	Make links between files:ln	
+Find files	Find files:locate	
+Print current login name	Print current login name:logname	
+Line printer control program	Line printer control program:lpc	
+Off line print	Off line print:lpr	
+Remove jobs from the print queue	Remove jobs from the print queue:lprm	
+List information about file(s)	List information about file(s):ls	
+Help manual	Help manual:man	
+Create new folder(s)	Create new folder(s):mkdir	
+Make FIFOs (named pipes)	Make FIFOs (named pipes):mkfifo	
+Make block or character special files	Make block or character special files:mknod	
+Display output one screen at a time	Display output one screen at a time:more	
+Mount a file system	Mount a file system:mount	
+Move or rename files or directories	Move or rename files or directories:mv	
+Set the priority of a command or job	Set the priority of a command or job:nice	
+Number lines and write files	Number lines and write files:nl	
+Run a command immune to hangups	Run a command immune to hangups:nohup	
+Modify a user password	Modify a user password:passwd	
+Merge lines of files	Merge lines of files:paste	
+Check file name portability	Check file name portability:pathchk	
+Convert text files for printing	Convert text files for printing:pr	
+Printer capability database	Printer capability database:printcap	
+Print environment variables	Print environment variables:printenv	
+Format and print data	Format and print data:printf	
+Process status	Process status:ps	
+Print Working Director	Print Working Director:pwdy	
+Display disk usage and limits	Display disk usage and limits:quota	
+Scan a file system for disk usage	Scan a file system for disk usage:quotacheck	
+Set disk quotas	Set disk quotas:quotactl	
+ram disk device	ram disk device:ram	
+Copy files between two machines	Copy files between two machines:rcp	
+Remove files	Remove files:rm	
+Remove folder(s)	Remove folder(s):rmdir	
+Remote Package Manager	Remote Package Manager:rpm	
+Remote file copy (Synchronize file trees)	Remote file copy (Synchronize file trees):rsync	
+Terminal window manager	Terminal window manager:screen	
+Merge two files interactively	Merge two files interactively:sdiff	
+Stream Editor	Stream Editor:sed	
+Accept keyboard input	Accept keyboard input:select	
+Print numeric sequences	Print numeric sequences:seq	
+Shutdown or restart linux	Shutdown or restart linux:shutdown	
+Delay for a specified time	Delay for a specified time:sleep	
+Sort text files	Sort text files:sort	
+Split a file into fixed-size pieces	Split a file into fixed-size pieces:split	
+Substitute user identity	Substitute user identity:su	
+Print a checksum for a file	Print a checksum for a file:sum	
+Make a new name for a file	Make a new name for a file:symlink	
+Synchronize data on disk with memory	Synchronize data on disk with memory:sync	
+Concatenate and write files in reverse	Concatenate and write files in reverse:tac	
+Output the last part of files	Output the last part of files:tail	
+Tape Archiver	Tape Archiver:tar	
+Redirect output to multiple files	Redirect output to multiple files:tee	
+Evaluate a conditional expression	Evaluate a conditional expression:test	
+Measure Program Resource Use	Measure Program Resource Use:time	
+Change file timestamps	Change file timestamps:touch	
+List processes running on the system	List processes running on the system:top	
+Trace Route to Host	Trace Route to Host:traceroute	
+Translate, squeeze, and/or delete characters	Translate, squeeze, and/or delete characters:tr	
+Do nothing, successfully	Do nothing, successfully:true	
+Topological sort	Topological sort:tsort	
+Print filename of terminal on stdin	Print filename of terminal on stdin:tty	
+Unmount a device	Unmount a device:umount	
+Print system information	Print system information:uname	
+Convert spaces to tabs	Convert spaces to tabs:unexpand	
+Uniquify files	Uniquify files:uniq	
+Convert units from one scale to another	Convert units from one scale to another:units	
+Unpack shell archive scripts	Unpack shell archive scripts:unshar	
+Create new user account	Create new user account:useradd	
+Modify user account	Modify user account:usermod	
+List users currently logged in	List users currently logged in:users	
+Encode a binary file	Encode a binary file:uuencode	
+Decode a file created by uuencode	Decode a file created by uuencode:uudecode	
+Verbosely list directory contents (`ls -l -b')	Verbosely list directory contents (`ls -l -b'):vdir	
+Execute/display a program periodically	Execute/display a program periodically:watch	
+Print byte, word, and line counts	Print byte, word, and line counts:wc	
+Report all known instances of a command	Report all known instances of a command:whereis	
+Locate a program file in the user's path	Locate a program file in the user's path:which	
+Print all usernames currently logged in	Print all usernames currently logged in:who	
+Print the current user id and name (`id -un')	Print the current user id and name (`id -un'):whoami	
+Execute utility, passing constructed argument list(s)	Execute utility, passing constructed argument list(s):xargs	
+Print a string until interrupted	Print a string until interrupted:yes	
