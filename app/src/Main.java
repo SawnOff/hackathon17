@@ -14,5 +14,6 @@ public class Main extends JFrame {
     clippy.setLocation(x, y);
     clippy.setVisible(true);
     
+    RunShellCommandFromJava.Terminal();
   }
 }

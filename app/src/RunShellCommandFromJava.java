@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class RunShellCommandFromJava {
   
-  public static void executeCommand(String command) {
+  static void executeCommand(String command) {
     
     try {
       Process proc = Runtime.getRuntime().exec(command);
@@ -28,7 +28,7 @@ public class RunShellCommandFromJava {
     return "~/" + withName.substring(withName.indexOf("/") + 1);
   }
   
-  public static void main(String[] args) {
+  public static void Terminal() {
     Scanner sc = new Scanner(System.in);
     String current;
     String newLoc;
