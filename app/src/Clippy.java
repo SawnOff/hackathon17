@@ -12,13 +12,13 @@ public class Clippy extends JFrame implements ActionListener {
   public static void main(String[] args) {
     Clippy clippy = new Clippy();
     clippy.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    clippy.pack();
     GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
     GraphicsDevice defaultScreen = ge.getDefaultScreenDevice();
     Rectangle rect = defaultScreen.getDefaultConfiguration().getBounds();
-    int x = (int)rect.getMaxX();
-    int y = (int)rect.getMaxY()- clippy.getHeight();
-    clippy.setLocation(x,y);
+    int x = (int) rect.getMaxX();
+    int y = (int) rect.getMaxY() - clippy.getHeight();
+    clippy.setLocation(x, y);
+    clippy.pack();
     clippy.setVisible(true);
 
   }
@@ -28,7 +28,7 @@ public class Clippy extends JFrame implements ActionListener {
     Box totalBox = Box.createVerticalBox();
     add(totalBox);
     setUndecorated(true);
-    setBackground(new Color(1.0f,1.0f,1.0f,0.0f));
+    setBackground(new Color(1.0f, 1.0f, 1.0f, 0.0f));
 
     Box upperBox = Box.createHorizontalBox();
     upperBox.setAlignmentX(Box.CENTER_ALIGNMENT);
@@ -52,6 +52,10 @@ public class Clippy extends JFrame implements ActionListener {
     this.answer = new JLabel("<html> Hi! I am Clippy, <br>" +
             "your Linux assistant. <br>" +
             "Would you like some assistance today? </html>");
+    Dimension dim = new Dimension(300, 300);
+    answer.setMinimumSize(dim);
+    answer.setPreferredSize(dim);
+    answer.setMaximumSize(dim);
     answer.setOpaque(true);
     answer.setBackground(Color.yellow);
     answer.setAlignmentX(JLabel.RIGHT_ALIGNMENT);
@@ -67,7 +71,6 @@ public class Clippy extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent e) {
     //lewis(questionField.getText());
     setAnswer(questionField.getText());
-    SwingUtilities.updateComponentTreeUI(answer);
   }
 
 }
