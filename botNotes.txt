@@ -1,0 +1,41 @@
+"Performs automated tasks"
+
+- Use conversation as interface
+- 
+
+- botframework emulator, cross platform
+- azure bot service
+
+
+- luis bot, ident, identities -> action
+
+- information retrieval:
+    lookup, reference and information seeking
+    scenarios backed by a data source
+
+- transactional:
+    lookup info, make amendments
+    backed by source
+
+- advisory role:
+    prescriptive guidance via 'expert' systems
+
+- open ended social
+    engage in open ended conversation
+    'siri', 'cortana'
+    detects sentiment
+
+
+factors that do not guarantee successful bots:
+  - how smart your bot is
+  - natural language
+  - lots of text
+  - speech
+
+need:
+  - quick answers
+  - easy to understand
+  - solve's problems efficiently
+  - better than alternatives
+  - runs on devices/platforms the user cares about
+  - natural/intuitive to use
