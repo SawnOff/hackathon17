@@ -1,3 +1,23 @@
+Text Editor	vi:Text Editor
+Change Directory	cd:Change Directory
+Copy one or more files to another location	cp:Copy one or more files to another location
+Concatenate and print (display) the content of files	cat:Concatenate and print (display) the content of files
+Search file(s) for lines that match a given pattern	grep:Search file(s) for lines that match a given pattern
+List information about file(s)	ls:List information about file(s)
+Remove files	rm:Remove files
+Print Working Directory	pwd:Print Working Directory
+Move or rename files or directories	mv:Move or rename files or directories
+Create new folder(s)	mkdir:Create new folder(s)
+Search for files that meet a desired criteria	find:Search for files that meet a desired criteria
+Remove folder(s)	rmdir:Remove folder(s)
+Display output one screen at a time	less:Display output one screen at a time
+Clear terminal screen	clear:Clear terminal screen
+Change access permissions	chmod:Change access permissions
+Kill processes by name	pkill:Kill processes by name
+Kill a process by specifying its PID	kill:Kill a process by specifying its PID
+Reboot the system	reboot:Reboot the system
+Shutdown or restart linux	shutdown:Shutdown or restart linux
+Change file owner and group	chown:Change file owner and group
 Create an alias	alias:Create an alias
 Search Help manual pages (man -k)	apropos:Search Help manual pages (man -k)
 Search for and install software packages (Debian/Ubuntu)	apt-get:Search for and install software packages (Debian/Ubuntu)
@@ -13,20 +33,14 @@ Run a shell builtin	builtin:Run a shell builtin
 Compress or decompress named file(s)	bzip2:Compress or decompress named file(s)
 Display a calendar	cal:Display a calendar
 Conditionally perform a command	case:Conditionally perform a command
-Concatenate and print (display) the content of files	cat:Concatenate and print (display) the content of files
-Change Directory	cd:Change Directory
 Partition table manipulator for Linux	cfdisk:Partition table manipulator for Linux
 Change group ownership	chgrp:Change group ownership
-Change access permissions	chmod:Change access permissions
-Change file owner and group	chown:Change file owner and group
 Run a command with a different root directory	chroot:Run a command with a different root directory
 System services (runlevel)	chkconfig:System services (runlevel)
 Print CRC checksum and byte counts	cksum:Print CRC checksum and byte counts
-Clear terminal screen	clear:Clear terminal screen
 Compare two files	cmp:Compare two files
 Compare two sorted files line by line	comm:Compare two sorted files line by line
 Run a command - ignoring shell functions	command:Run a command - ignoring shell functions
-Copy one or more files to another location	cp:Copy one or more files to another location
 Daemon to execute scheduled commands	cron:Daemon to execute scheduled commands
 Schedule a command to run at a later time	crontab:Schedule a command to run at a later time
 Split a file into context-determined pieces	csplit:Split a file into context-determined pieces
@@ -66,7 +80,6 @@ Partition table manipulator for Linux	fdisk:Partition table manipulator for Linu
 Send job to foreground	fg:Send job to foreground
 Search file(s) for lines that match a fixed string	fgrep:Search file(s) for lines that match a fixed string
 Determine file type	file:Determine file type
-Search for files that meet a desired criteria	find:Search for files that meet a desired criteria
 Reformat paragraph text	fmt:Reformat paragraph text
 Wrap text to fit a specified width.	fold:Wrap text to fit a specified width.
 Format disks or tapes	format:Format disks or tapes
@@ -77,7 +90,6 @@ Define Function Macros	function:Define Function Macros
 Identify/kill the process that is accessing a file	fuser:Identify/kill the process that is accessing a file
 Find and Replace text within file(s)	gawk:Find and Replace text within file(s)
 Parse positional parameters	getopts:Parse positional parameters
-Search file(s) for lines that match a given pattern	grep:Search file(s) for lines that match a given pattern
 Add a user security group	groupadd:Add a user security group
 Delete a group	groupdel:Delete a group
 Modify a group	groupmod:Modify a group
@@ -91,7 +103,6 @@ Print or set system name	hostname:Print or set system name
 Interactive process viewer	htop:Interactive process viewer
 Convert the character set of a file	iconv:Convert the character set of a file
 Print user and group id's	id:Print user and group id's
-Conditionally perform a command	if:Conditionally perform a command
 Configure a network interface	ifconfig:Configure a network interface
 Stop a network interface	ifdown:Stop a network interface
 Start a network interface up	ifup:Start a network interface up
@@ -100,9 +111,7 @@ Copy files and set attributes	install:Copy files and set attributes
 Routing, devices and tunnels	ip:Routing, devices and tunnels
 List active jobs	jobs:List active jobs
 Join lines on a common field	join:Join lines on a common field
-Kill a process by specifying its PID	kill:Kill a process by specifying its PID
 Kill processes by name	killall:Kill processes by name
-Display output one screen at a time	less:Display output one screen at a time
 Perform arithmetic on shell variables	let:Perform arithmetic on shell variables
 Create a link to a file	link:Create a link to a file
 Create a symbolic link to a file	ln:Create a symbolic link to a file
@@ -118,11 +127,9 @@ Abort a print job	lprintd:Abort a print job
 List the print queue	lprintq:List the print queue
 Remove jobs from the print queue	lprm:Remove jobs from the print queue
 List block devices	lsblk:List block devices
-List information about file(s)	ls:List information about file(s)
 List open files	lsof:List open files
 Recompile a group of programs	make:Recompile a group of programs
 Help manual	man:Help manual
-Create new folder(s)	mkdir:Create new folder(s)
 Make FIFOs (named pipes)	mkfifo:Make FIFOs (named pipes)
 Create an hybrid ISO9660/JOLIET/HFS filesystem	mkisofs:Create an hybrid ISO9660/JOLIET/HFS filesystem
 Make block or character special files	mknod:Make block or character special files
@@ -131,7 +138,6 @@ Browse or page through a text file	most:Browse or page through a text file
 Mount a file system	mount:Mount a file system
 Manipulate MS-DOS files	mtools:Manipulate MS-DOS files
 Network diagnostics (traceroute/ping)	mtr:Network diagnostics (traceroute/ping)
-Move or rename files or directories	mv:Move or rename files or directories
 Mass Move and rename (files)	mmv:Mass Move and rename (files)
 Netcat, read and write data across networks	nc:Netcat, read and write data across networks
 Networking information	netstat:Networking information
@@ -147,7 +153,6 @@ Merge lines of files	paste:Merge lines of files
 Check file name portability	pathchk:Check file name portability
 Test a network connection	ping:Test a network connection
 List processes by name	pgrep:List processes by name
-Kill processes by name	pkill:Kill processes by name
 Restore the previous value of the current directory	popd:Restore the previous value of the current directory
 Prepare files for printing	pr:Prepare files for printing
 Printer capability database	printcap:Printer capability database
@@ -156,7 +161,6 @@ Format and print data	printf:Format and print data
 Process status	ps:Process status
 Save and then change the current directory	pushd:Save and then change the current directory
 Monitor the progress of data through a pipe	pv:Monitor the progress of data through a pipe
-Print Working Directory	pwd:Print Working Directory
 Display disk usage and limits	quota:Display disk usage and limits
 Scan a file system for disk usage	quotacheck:Scan a file system for disk usage
 ram disk device	ram:ram disk device
@@ -165,14 +169,11 @@ Copy files between two machines	rcp:Copy files between two machines
 Read a line from standard input	read:Read a line from standard input
 Read from stdin into an array variable	readarray:Read from stdin into an array variable
 Mark variables/functions as readonly	readonly:Mark variables/functions as readonly
-Reboot the system	reboot:Reboot the system
 Rename files	rename:Rename files
 Alter priority of running processes	renice:Alter priority of running processes
 Synchronize remote files via email	remsync:Synchronize remote files via email
 Exit a shell function	return:Exit a shell function
 Reverse lines of a file	rev:Reverse lines of a file
-Remove files	rm:Remove files
-Remove folder(s)	rmdir:Remove folder(s)
 Remote file copy (Synchronize file trees)	rsync:Remote file copy (Synchronize file trees)
 Multiplex terminal, run remote shells via ssh	screen:Multiplex terminal, run remote shells via ssh
 Secure copy (remote file copy)	scp:Secure copy (remote file copy)
@@ -184,7 +185,6 @@ Manipulate shell variables and functions	set:Manipulate shell variables and func
 Secure File Transfer Program	sftp:Secure File Transfer Program
 Shift positional parameters	shift:Shift positional parameters
 Shell Options	shopt:Shell Options
-Shutdown or restart linux	shutdown:Shutdown or restart linux
 Delay for a specified time	sleep:Delay for a specified time
 Find files	slocate:Find files
 Sort text files	sort:Sort text files
@@ -237,7 +237,6 @@ Encode a binary file	uuencode:Encode a binary file
 Decode a file created by uuencode	uudecode:Decode a file created by uuencode
 Verbosely list directory contents (`ls -l -b')	v:Verbosely list directory contents (`ls -l -b')
 Verbosely list directory contents (`ls -l -b')	vdir:Verbosely list directory contents (`ls -l -b')
-Text Editor	vi:Text Editor
 Report virtual memory statistics	vmstat:Report virtual memory statistics
 Wait for a process to complete	wait:Wait for a process to complete
 Execute/display a program periodically	watch:Execute/display a program periodically
@@ -255,4 +254,3 @@ Print a string until interrupted	yes:Print a string until interrupted
 Package and compress (archive) files.	zip:Package and compress (archive) files.
 Run a command script in the current shell	.:Run a command script in the current shell
 Run the last command again	!!:Run the last command again
-:
