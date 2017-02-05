@@ -5,11 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import org.json.JSONObject;
 
-public final class MicrosoftHttpRequest {
-
-  public static void main(String[] args) {
-    sendText("move file?");
-  }
+final class MicrosoftHttpRequest {
 
   public static Answer sendText(String txt) {
     HttpURLConnection con = null;
