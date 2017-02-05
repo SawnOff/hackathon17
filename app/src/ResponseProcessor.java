@@ -30,6 +30,7 @@ public final class ResponseProcessor {
     String error = arr[arr.length - 1];
     
     if (error != " not found" && error != " missing operand") {
+      errs.clear();
       return null;
     }
     

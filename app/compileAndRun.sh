@@ -1,2 +1,3 @@
+java -cp out/production/app Clippy &
 g++ main/clippy.cpp
-./main/a.out
+./a.out

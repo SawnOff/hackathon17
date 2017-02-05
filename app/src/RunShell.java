@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class RunShell {
   
+  static String response;
+  
   public static void parseFile(String fileLoc) {
     
     try {
@@ -14,17 +16,20 @@ public class RunShell {
       String output;
       
       input = sc.nextLine();
-      output = sc.nextLine();
-      
-      if (!output.equals("Success")) {
-        //TODO: smth
+      if (sc.hasNextLine()) {
+        output = sc.nextLine();
+        response = ResponseProcessor.processCliError(output);
+      } else {
+        output = "";
       }
-      
     } catch (FileNotFoundException e) {
       //
     }
   }
   
+  public static String getResponse() {
+    return response;
+  }
   public static void Terminal() {
     //TODO: make it do somthing
   }

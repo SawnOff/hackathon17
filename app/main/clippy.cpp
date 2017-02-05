@@ -9,9 +9,6 @@ using namespace std;
 string readTmp (string dest);
 
 int main () {
-
-  system("java -cp out/ Clippy");
-
   ofstream myfile;
   //myfile.open ("out.txt");
 
@@ -34,7 +31,7 @@ int main () {
 	ofstream outFile((tmpDir + "/output.txt").c_str());
 	outFile << string(input) + "\n";
 
-  	string post = "cd " + currentDir + " && " + string(input) + " 2> " + tmpDir + "/tmp.txt 1>>&2 " + tmpDir + "/tmp.txt && pwd > \"" + tmpDir + "/tmp1.txt\"";
+  	string post = "cd " + currentDir + " && " + string(input) + " > " + tmpDir + "/tmp.txt 2> " + tmpDir + "/tmp.txt && pwd > \"" + tmpDir + "/tmp1.txt\"";
   	system(post.c_str());
 	string outStr = readTmp(tmpDir + "/tmp.txt");
 	system(("echo \"" + outStr + "\"").c_str());
