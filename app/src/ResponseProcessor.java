@@ -21,8 +21,13 @@ public final class ResponseProcessor {
       return "I didn't understand your question.";
     }
     
+<<<<<<< HEAD
+    String response = TYPE1_1[r1] + processed[0] + TYPE1_2[r2]
+        + processed[1];
+=======
     String response = TYPE1_1[r1] + processed.getDescription() + TYPE1_2[r2]
       + processed.getCommand();
+>>>>>>> cc59df5a2530f4f9907efa66b5e6bc34533b72aa
     return response;
   }
   

@@ -9,26 +9,26 @@ final class MicrosoftHttpRequest {
 
   public static Answer sendText(String txt) {
     HttpURLConnection con = null;
-
+    
     try {
       String urlStr = "http://h17.duckdns.org/request.php";
       URL url = new URL(urlStr);
       con = (HttpURLConnection) url.openConnection();
-
+      
       con.setRequestMethod("POST");
-
+      
       String urlParameters = "text=" + txt;
-
+      
       con.setDoOutput(true);
       DataOutputStream wr = new DataOutputStream(con.getOutputStream());
       wr.writeBytes(urlParameters);
       wr.flush();
       wr.close();
-
+      
       BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
       String inputLine;
       StringBuffer response = new StringBuffer();
-
+      
       while ((inputLine = in.readLine()) != null) {
         response.append(inputLine);
       }
@@ -53,5 +53,5 @@ final class MicrosoftHttpRequest {
       }
     }
   }
-
+  
 }
