@@ -1,4 +1,4 @@
-# hackathon17
+# CLIPPY FOR LINUX
 This is Clippy for Linux.
 
 Are you a Linux scrub?
