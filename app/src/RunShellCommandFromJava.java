@@ -3,9 +3,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class RunShellCommandFromJava {
+class RunShellCommandFromJava {
   
-  public static void executeCommand(String command) {
+  private static void executeCommand(String command) {
     
     try {
       Process proc = Runtime.getRuntime().exec(command);
@@ -28,39 +28,40 @@ public class RunShellCommandFromJava {
     return "~/" + withName.substring(withName.indexOf("/") + 1);
   }
   
-  public static void Terminal() {
+  private static void process(String input, String current) throws IOException {
+    executeCommand(input);
+    System.out.print("clippy:@");
+    current = new java.io.File(".").getCanonicalPath();
+    current = sugarPath(current);
+    System.out.print(current + "$ ");
+  }
+  
+  static void Terminal() {
     Scanner sc = new Scanner(System.in);
-    String current;
+    String current = "";
     String newLoc;
     try {
-  
-      System.out.print("clippy:@");
-      current = new java.io.File(".").getCanonicalPath();
-      current = sugarPath(current);
-      System.out.print(current + "$ ");
+      
+      process("echo hello user!", current);
       
       while (true) {
         String input = sc.nextLine();
-        try {
+        
+        if (!input.contains(" ")) {
+          process(input, current);
+        } else {
           if (input.substring(0, input.indexOf(" ")).equals("cd")) {
             newLoc = input.substring(input.indexOf(" ") + 1);
             System.out.print("clippy:@");
             System.out.print(newLoc + "$ ");
-  
           } else {
-            executeCommand(input);
-            System.out.print("clippy:@");
-            current = new java.io.File(".").getCanonicalPath();
-            current = sugarPath(current);
-            System.out.print(current + "$ ");
-            
+            process(input, current);
           }
-        } catch (ArrayIndexOutOfBoundsException e) {
-          System.out.println("CUNT!");
         }
+        
       }
     } catch (Exception e) {
-      //
+      System.out.println(e.toString());
     }
     System.out.println();
   }
