@@ -9,7 +9,7 @@ public final class ResponseProcessor {
 
 	private static List<String> errs = new ArrayList<String>();
 	private static List<String> cmds = new ArrayList<String>();
-
+	
 	//TODO
 	private static float diValue = 3;
 	
@@ -23,7 +23,7 @@ public final class ResponseProcessor {
   	return response;
   }
 
-  public static String processCliError(String input, String err, Boolean first) {
+  public static List processCliError(String input, String err, Boolean first) {
 	
 	if (first) {
 		cmds.clear();
@@ -34,7 +34,7 @@ public final class ResponseProcessor {
   	cmds.add(cmd);
   	errs.add(err);
   	
-  	if (errs.size() + 1 < diValue) {
+  	if (errs.size() < diValue) {
   		return null;
   	}
   	
@@ -62,6 +62,6 @@ public final class ResponseProcessor {
   		}
   	}
   	
-  	return maxErr;
+  	return cmds;
   }
 }
