@@ -1,2 +1,2 @@
-g++ main/clippo.cpp
+g++ main/clippy.cpp
 ./main/a.out
