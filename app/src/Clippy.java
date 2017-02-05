@@ -9,6 +9,7 @@ public class Clippy extends JFrame implements ActionListener {
   
   private JLabel answer;
   private JTextField questionField;
+  private JLabel poseTheQuestion;
   
   public static void main(String[] args) {
     Clippy clippy = new Clippy();
@@ -41,7 +42,7 @@ public class Clippy extends JFrame implements ActionListener {
     image.setAlignmentX(JLabel.LEFT_ALIGNMENT);
     upperBox.add(image);
     
-    JLabel poseTheQuestion = new JLabel("Ask Clippy a question:");
+    this.poseTheQuestion = new JLabel("Ask Clippy a question:");
     poseTheQuestion.setOpaque(true);
     poseTheQuestion.setBackground(Color.GRAY);
     poseTheQuestion.setAlignmentX(JLabel.CENTER_ALIGNMENT);
@@ -69,18 +70,15 @@ public class Clippy extends JFrame implements ActionListener {
     
   }
   
-  private void setAnswer(String newAnswer) {
-    answer.setText(newAnswer);
-  }
-  
   @Override
   public void actionPerformed(ActionEvent e) {
     String openHTML = "<html><body style='width: 200px'>";
     String closeHTML = "</html>";
-    setAnswer("I'm thinking...");
+    answer.setText("I'm thinking...");
+    answer.paintImmediately(answer.getVisibleRect());
     String input = questionField.getText();
-    String answer = ResponseProcessor.respondToQ(MicrosoftHttpRequest.sendText(input));
-    setAnswer(openHTML + answer + closeHTML);
+    String response = ResponseProcessor.respondToQ(MicrosoftHttpRequest.sendText(input));
+    answer.setText(openHTML + response + closeHTML);
     questionField.setText("");
   }
   
