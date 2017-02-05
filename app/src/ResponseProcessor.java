@@ -13,7 +13,7 @@ public final class ResponseProcessor {
   //TODO
   private static float diValue = 3;
   
-  public static String respondToQ(String[] processed) {
+  static String respondToQ(String[] processed) {
     short r1 = (short) Math.floor(Math.random() * TYPE1_1.length);
     short r2 = (short) Math.floor(Math.random() * TYPE1_2.length);
     
@@ -43,7 +43,7 @@ public final class ResponseProcessor {
     return null;
   }
   
-  public static String findPopularError() {
+  private static String findPopularError() {
     short maxErrReps = 0;
     String maxErr = "";
     

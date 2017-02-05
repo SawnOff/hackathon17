@@ -4,9 +4,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public final class MicrosoftHttpRequest {
+final class MicrosoftHttpRequest {
 
-  public static String[] sendText(String txt) {
+  static String[] sendText(String txt) {
     HttpURLConnection con = null;
 
     try {
