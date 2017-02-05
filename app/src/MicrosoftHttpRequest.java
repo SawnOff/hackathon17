@@ -3,10 +3,11 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import org.json.JSONObject;
 
 final class MicrosoftHttpRequest {
-  
-  static String[] sendText(String txt) {
+
+  public static Answer sendText(String txt) {
     HttpURLConnection con = null;
     
     try {
@@ -32,11 +33,15 @@ final class MicrosoftHttpRequest {
         response.append(inputLine);
       }
       in.close();
-      
-      String str = response.toString().split(",")[0];
-      String trimmed = str.substring(11, str.length() - 1);
-      
-      return trimmed.split(":");
+
+      String resp = response.toString();
+      JSONObject obj = new JSONObject(resp);
+
+      String[] ans = obj.getString("answer").split(":");
+      Double score = obj.getDouble("score");
+
+      return new Answer(ans[0], ans[1], score);
+
     } catch (Exception e) {
       e.printStackTrace();
       return null;
