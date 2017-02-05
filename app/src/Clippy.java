@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -51,10 +52,13 @@ public class Clippy extends JFrame implements ActionListener {
     questionField.addActionListener(this);
     totalBox.add(questionField);
 
+    Border paddingBorder = BorderFactory.createEmptyBorder(10,10,10,10);
+
     this.answer = new JLabel("<html> Hi! I am Clippy, <br>" +
             "your Linux assistant. <br>" +
             "Would you like some assistance today? </html>");
     Dimension dim = new Dimension(300, 300);
+    answer.setBorder(paddingBorder);
     answer.setMinimumSize(dim);
     answer.setPreferredSize(dim);
     answer.setMaximumSize(dim);
