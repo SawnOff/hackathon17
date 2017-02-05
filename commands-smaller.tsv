@@ -1,0 +1,79 @@
+Text Editor	vi:Text Editor	
+Change Directory	cd:Change Directory	
+Copy one or more files to another location	cp:Copy one or more files to another location	
+Concatenate and print (display) the content of files	cat:Concatenate and print (display) the content of files	
+Search file(s) for lines that match a given pattern	grep:Search file(s) for lines that match a given pattern	
+List information about file(s)	ls:List information about file(s)	
+Remove files	rm:Remove files	
+Print Working Directory	pwd:Print Working Directory	
+Move or rename files or directories	mv:Move or rename files or directories	
+Create new folder(s)	mkdir:Create new folder(s)	
+Search for files that meet a desired criteria	find:Search for files that meet a desired criteria	
+Remove folder(s)	rmdir:Remove folder(s)	
+Display output one screen at a time	less:Display output one screen at a time	
+Clear terminal screen	clear:Clear terminal screen	
+Change access permissions	chmod:Change access permissions	
+Kill processes by name	pkill:Kill processes by name	
+Kill a process by specifying its PID	kill:Kill a process by specifying its PID	
+Reboot the system	reboot:Reboot the system	
+Shutdown or restart linux	shutdown:Shutdown or restart linux	
+Change file owner and group	chown:Change file owner and group	
+Create an alias	alias:Create an alias	
+Search for and install software packages (Debian/Ubuntu)	apt-get:Search for and install software packages (Debian/Ubuntu)	
+Find and Replace text, database sort/validate/index	awk:Find and Replace text, database sort/validate/index	
+GNU Bourne-Again SHell	bash:GNU Bourne-Again SHell	
+Send to background	bg:Send to background	
+Partition table manipulator for Linux	cfdisk:Partition table manipulator for Linux	
+Change group ownership	chgrp:Change group ownership	
+Run a command with a different root directory	chroot:Run a command with a different root directory	
+Compare two files	cmp:Compare two files	
+Compare two sorted files line by line	comm:Compare two sorted files line by line	
+Display or change the date and time	date:Display or change the date and time	
+Display the differences between two files	diff:Display the differences between two files	
+Estimate file space usage	du:Estimate file space usage	
+Display message on screen	echo:Display message on screen	
+Exit the shell	exit:Exit the shell	
+Convert tabs to spaces	expand:Convert tabs to spaces	
+Set an environment variable	export:Set an environment variable	
+Evaluate expressions	expr:Evaluate expressions	
+Do nothing, unsuccessfully	false:Do nothing, unsuccessfully	
+Partition table manipulator for Linux	fdisk:Partition table manipulator for Linux	
+Determine file type	file:Determine file type	
+Wrap text to fit a specified width.	fold:Wrap text to fit a specified width.	
+Format disks or tapes	format:Format disks or tapes	
+Display memory usage	free:Display memory usage	
+File system consistency check and repair	fsck:File system consistency check and repair	
+File Transfer Protocol	ftp:File Transfer Protocol	
+Add a user security group	groupadd:Add a user security group	
+Delete a group	groupdel:Delete a group	
+Modify a group	groupmod:Modify a group	
+Print group names a user is in	groups:Print group names a user is in	
+Display help for a built-in command	help:Display help for a built-in command	
+Command History	history:Command History	
+Create a symbolic link to a file	ln:Create a symbolic link to a file	
+Exit a login shell	logout:Exit a login shell	
+Help manual	man:Help manual	
+Mount a file system	mount:Mount a file system	
+Modify a user password	passwd:Modify a user password	
+Test a network connection	ping:Test a network connection	
+Secure copy (remote file copy)	scp:Secure copy (remote file copy)	
+Secure File Transfer Program	sftp:Secure File Transfer Program	
+Sort text files	sort:Sort text files	
+Secure Shell client (remote login program)	ssh:Secure Shell client (remote login program)	
+Execute a command as another user	sudo:Execute a command as another user	
+Change file timestamps	touch:Change file timestamps	
+List processes running on the system	top:List processes running on the system	
+Do nothing, successfully	true:Do nothing, successfully	
+Unmount a device	umount:Unmount a device	
+Remove an alias	unalias:Remove an alias	
+Create new user account	useradd:Create new user account	
+Delete a user account	userdel:Delete a user account	
+Modify user account	usermod:Modify user account	
+List users currently logged in	users:List users currently logged in	
+Print all usernames currently logged in	who:Print all usernames currently logged in	
+Print the current user id and name (`id -un')	whoami:Print the current user id and name (`id -un')	
+Retrieve web pages or files via HTTP, HTTPS or FTP	wget:Retrieve web pages or files via HTTP, HTTPS or FTP	
+Print a string until interrupted	yes:Print a string until interrupted	
+Package and compress (archive) files.	zip:Package and compress (archive) files.	
+Run a command script in the current shell	.:Run a command script in the current shell	
+Run the last command again	!!:Run the last command again	
