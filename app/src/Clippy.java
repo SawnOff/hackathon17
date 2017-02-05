@@ -22,7 +22,7 @@ public class Clippy extends JFrame implements ActionListener {
     clippy.pack();
     clippy.setVisible(true);
     
-    RunShellCommandFromJava.Terminal();
+    RunShell.Terminal();
     
   }
   
