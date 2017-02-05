@@ -18,7 +18,7 @@ public final class ResponseProcessor {
     short r2 = (short) Math.floor(Math.random() * TYPE1_2.length);
     
     String response = TYPE1_1[r1] + processed[0] + TYPE1_2[r2]
-      + processed[1];
+        + processed[1];
     return response;
   }
   
