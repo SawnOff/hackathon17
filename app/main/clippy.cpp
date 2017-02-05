@@ -9,6 +9,9 @@ using namespace std;
 string readTmp (string dest);
 
 int main () {
+
+  system("java -cp out/ Clippy");
+
   ofstream myfile;
   //myfile.open ("out.txt");
 

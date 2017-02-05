@@ -8,9 +8,7 @@ public final class ResponseProcessor {
   private static String[] TYPE1_2 = {" use ", " use the command ", " type ", " type the command "};
   
   private static List<String> errs = new ArrayList<String>();
-  private static List<String> cmds = new ArrayList<String>();
   
-  //TODO
   private static float diValue = 3;
   
   static String respondToQ(Answer processed) {
@@ -26,32 +24,35 @@ public final class ResponseProcessor {
     return response;
   }
   
-  public static String processCliError(String input, String err, Boolean first) {
+  public static String processCliError(String output) {
     
-    if (first) {
-      cmds.clear();
-      errs.clear();
+  String[] arr = output.split(":");
+    String error = arr[arr.length - 1];
+    
+    if (error != " not found" && error != " missing operand") {
+      return null;
     }
     
-    String cmd = input.split(" ")[0];
-    cmds.add(cmd);
-    errs.add(err);
+    errs.add(output);
     
     if (errs.size() < diValue) {
       return null;
     }
     
     String[] errorSplit = findPopularError().split(":");
-    String error = errorSplit[errorSplit.length - 1].trim();
+    error = errorSplit[errorSplit.length - 1];
+    
+    diValue *= 1.1;
 
     switch (error) {
-      case "not found":
-        return "That's not a command";
-      case "missing operand":
-        return "You'll need to give me more than that";
-      default:
-        return "You really fucked up: " + error;
-    }
+    case " not found":
+      return "Try asking me for help";
+    case " missing operand":
+      return "Use man " + arr[0] + " to find out more";
+    default:
+      return "You really fucked up: " + error;
+  }
+    
   }
   
   private static String findPopularError() {
@@ -78,7 +79,7 @@ public final class ResponseProcessor {
         errs.remove(curErr);
       }
     }
-    
+    errs.clear();
     return maxErr;
   }
 }
