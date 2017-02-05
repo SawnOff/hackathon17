@@ -41,10 +41,17 @@ public final class ResponseProcessor {
       return null;
     }
     
-    String error = findPopularError();
-    
-    //TODO: this
-    return null;
+    String[] errorSplit = findPopularError().split(":");
+    String error = errorSplit[errorSplit.length - 1].trim();
+
+    switch (error) {
+      case "not found":
+        return "That's not a command";
+      case "missing operand":
+        return "You'll need to give me more than that";
+      default:
+        return "You really fucked up: " + error;
+    }
   }
   
   private static String findPopularError() {
