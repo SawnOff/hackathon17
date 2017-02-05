@@ -1,2 +1,2 @@
-javac -d out/ src/*.java
-java -cp out/ Clippy
+g++ main/clippo.cpp
+./main/a.out
