@@ -1,24 +1,24 @@
 public class Answer {
 
   private final String command;
-  private final String theOtherOne;
-  private final double theNumberOne;
+  private final String description;
+  private final double score;
 
-  public Answer(String command, String theOtherOne, double theNumberOne) {
+  public Answer(String command, String description, double score) {
     this.command = command;
-    this.theOtherOne = theOtherOne;
-    this.theNumberOne = theNumberOne;
+    this.description = description;
+    this.score = score;
   }
 
   public String getCommand() {
     return command;
   }
 
-  public String getTheOtherOne() {
-    return theOtherOne;
+  public String getDescription() {
+    return description;
   }
 
-  public double getTheNumberOne() {
-    return theNumberOne;
+  public double getScore() {
+    return score;
   }
 }
