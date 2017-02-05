@@ -23,7 +23,7 @@ public final class ResponseProcessor {
   	return response;
   }
 
-  public static List processCliError(String input, String err, Boolean first) {
+  public static String processCliError(String input, String err, Boolean first) {
 	
 	if (first) {
 		cmds.clear();
@@ -62,6 +62,6 @@ public final class ResponseProcessor {
   		}
   	}
   	
-  	return cmds;
+  	return maxErr;
   }
 }
