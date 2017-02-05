@@ -3,10 +3,15 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import org.json.JSONObject;
 
 public final class MicrosoftHttpRequest {
 
-  public static String[] sendText(String txt) {
+  public static void main(String[] args) {
+    sendText("move file?");
+  }
+
+  public static Answer sendText(String txt) {
     HttpURLConnection con = null;
 
     try {
@@ -33,10 +38,14 @@ public final class MicrosoftHttpRequest {
       }
       in.close();
 
-      String str = response.toString().split(",")[0];
-      String trimmed = str.substring(11, str.length() - 1);
+      String resp = response.toString();
+      JSONObject obj = new JSONObject(resp);
 
-      return trimmed.split(":");
+      String[] ans = obj.getString("answer").split(":");
+      Double score = obj.getDouble("score");
+
+      return new Answer(ans[0], ans[1], score);
+
     } catch (Exception e) {
       e.printStackTrace();
       return null;
