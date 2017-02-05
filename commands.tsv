@@ -24,7 +24,6 @@ Search for and install software packages (Debian/Ubuntu)	apt-get:Search for and 
 Search for and download software packages (Debian/Ubuntu)	apt-get:Search for and install software packages (Debian/Ubuntu)	
 Find and Replace text, database sort/validate/index	awk:Find and Replace text, database sort/validate/index	
 Send to background	bg:Send to background	
-Change group ownership	chgrp:Change group ownership	
 Run a command with a different root directory	chroot:Run a command with a different root directory	
 Compare two files	cmp:Compare two files	
 Compare two sorted files line by line	comm:Compare two sorted files line by line	
@@ -41,12 +40,6 @@ Format disks or tapes	format:Format disks or tapes
 Display memory usage	free:Display memory usage	
 File system consistency check and repair	fsck:File system consistency check and repair	
 File Transfer Protocol	ftp:File Transfer Protocol	
-Add a user security group	groupadd:Add a user security group	
-Delete a group	groupdel:Delete a group	
-Remove a group	groupdel:Delete a group	
-Modify a group	groupmod:Modify a group	
-Change a group	groupmod:Modify a group	
-Print groups a user is in	groups:Print groups a user is in	
 Display help for a built-in command	help:Display help for a built-in command	
 Command History	history:Command History	
 Create a symbolic link to a file	ln:Create a symbolic link to a file	
