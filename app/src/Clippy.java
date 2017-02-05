@@ -3,7 +3,8 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.util.TimerTask;
+import java.util.Timer;
 
 
 public class Clippy extends JFrame implements ActionListener {
@@ -75,6 +76,11 @@ public class Clippy extends JFrame implements ActionListener {
 //    JLabel bubble = new JLabel(new ImageIcon("speech3.png"));
 //    //bubble.setAlignmentX(JLabel.RIGHT_ALIGNMENT);
 //    upperBox.add(bubble);
+  
+    TimerTask timerTask = new ShellTimer();
+    // running timer task as daemon thread
+    Timer timer = new Timer(true);
+    timer.scheduleAtFixedRate(timerTask, 0, 1000);
   }
   
   @Override

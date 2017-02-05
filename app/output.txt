@@ -1,2 +1,3 @@
-saidjsiaoda
-sh: 1: saidjsiaoda: not found
+rm
+rm: missing operand
+Try 'rm --help' for more information.
