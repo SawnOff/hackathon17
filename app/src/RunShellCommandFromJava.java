@@ -4,6 +4,8 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 class RunShellCommandFromJava {
+
+  private static currentDir = "";
   
   private static void executeCommand(String command) {
     
@@ -13,9 +15,16 @@ class RunShellCommandFromJava {
       BufferedReader reader =
           new BufferedReader(new InputStreamReader(proc.getInputStream()));
       String line = "";
+      String tmpLine = "";
       while ((line = reader.readLine()) != null) {
-        System.out.print(line + "\n");
+        if (tmpLine != "")
+          System.out.print(tmpLine + "\n");
+
+        tmpLine = line;
       }
+
+      currentDir = tmpLine;
+
       proc.waitFor();
     } catch (IOException | InterruptedException e) {
       //
@@ -37,7 +46,7 @@ class RunShellCommandFromJava {
   }
   
   static void Terminal() {
-    Scanner sc = new Scanner(System.in);
+    /*Scanner sc = new Scanner(System.in);
     String current = "";
     String newLoc;
     try {
@@ -63,7 +72,36 @@ class RunShellCommandFromJava {
     } catch (Exception e) {
       System.out.println(e.toString());
     }
+    System.out.println();*/
+
+    Scanner sc = new Scanner(System.in);
+    String current = "";
+    try {
+      
+      while (true) {
+        String input = sc.nextLine();
+
+        executeCommand("./../c++/a.out \"" + currentDir + "\" \"" + input + "\"");
+        
+        /*if (!input.contains(" ")) {
+          process(input, current);
+        } else {
+          if (input.substring(0, input.indexOf(" ")).equals("cd")) {
+            newLoc = input.substring(input.indexOf(" ") + 1);
+            System.out.print("clippy:@");
+            System.out.print(newLoc + "$ ");
+          } else {
+            process(input, current);
+          }
+        }*/
+        
+      }
+    } catch (Exception e) {
+      System.out.println(e.toString());
+    }
     System.out.println();
+
+
   }
   
 }
