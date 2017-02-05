@@ -13,12 +13,21 @@ public final class ResponseProcessor {
   //TODO
   private static float diValue = 3;
   
-  static String respondToQ(String[] processed) {
+  static String respondToQ(Answer processed) {
     short r1 = (short) Math.floor(Math.random() * TYPE1_1.length);
     short r2 = (short) Math.floor(Math.random() * TYPE1_2.length);
+
+    if (processed.getScore() < 50) {
+      return "I didn't understand your question.";
+    }
     
+<<<<<<< HEAD
     String response = TYPE1_1[r1] + processed[0] + TYPE1_2[r2]
         + processed[1];
+=======
+    String response = TYPE1_1[r1] + processed.getDescription() + TYPE1_2[r2]
+      + processed.getCommand();
+>>>>>>> cc59df5a2530f4f9907efa66b5e6bc34533b72aa
     return response;
   }
   
