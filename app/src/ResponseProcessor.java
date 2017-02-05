@@ -18,8 +18,13 @@ public final class ResponseProcessor {
     short r2 = (short) Math.floor(Math.random() * TYPE1_2.length);
     
     String response = TYPE1_1[r1] + processed[0] + TYPE1_2[r2]
+<<<<<<< HEAD
         + processed[1] + "\n\n" + processed[2];
     
+=======
+      + processed[1];
+
+>>>>>>> 54dca21f6cedf6dc7f8cf0e417f7979eb1260f18
     return response;
   }
   
@@ -40,6 +45,7 @@ public final class ResponseProcessor {
     
     String error = findPopularError();
     
+    //TODO: this
     return null;
   }
   
