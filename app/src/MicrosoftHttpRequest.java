@@ -39,7 +39,9 @@ final class MicrosoftHttpRequest {
 
       String[] ans = obj.getString("answer").split(":");
       Double score = obj.getDouble("score");
-
+      if (ans.length == 1) {
+        return new Answer(ans[0], "lol", score);
+      }
       return new Answer(ans[0], ans[1], score);
 
     } catch (Exception e) {
