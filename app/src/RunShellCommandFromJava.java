@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class RunShellCommandFromJava {
   
-  static void executeCommand(String command) {
+  public static void executeCommand(String command) {
     
     try {
       Process proc = Runtime.getRuntime().exec(command);
